@@ -31,6 +31,7 @@ These properties are enforced structurally rather than procedurally or behaviour
 SIG-LLM™ is composed of independently modular and composable components. Modules may be deployed, omitted, reordered, or combined depending on operational context, risk profile, and governance requirements. The following diagram provides an overview of the key modules and their interactions.
 
 Figure 1: Overview of SIG-LLM™ Modular Architecture
+![Figure 1: SIG-LLM Modular Architecture](assets/figure1.png)
 
 The diagram illustrates the structural relationships among SIG‑LLM™ modules. The Bifurcation Module (BM) separates incoming unstructured and deterministic states, which are then captured in the Structured Token Map (STM). The Audit / Fidelity Module provides a JSON-like representation of the STM inputs, enabling traceability and user oversight before inference. The Human-Governed Scaffold (SC) defines semantic and operational boundaries, ensuring that the Generative Engine (GE) operates strictly within approved limits. The Instruction Module (IM) supplies dynamic, post-deployment guidance without modifying core model weights, while the Active Fidelity Monitor (AFM) enforces real-time verification of outputs for semantic consistency and factual accuracy. Finally, the Governance & Adaptivity Surface (GAS) allows human authorities to adjust constraints, instructions, and scaffold parameters dynamically, maintaining auditability and deterministic fidelity throughout deployment.
 
